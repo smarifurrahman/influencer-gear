@@ -249,6 +249,7 @@ header {
 .featured-description {
     padding-bottom: 20px;
 }
+
 .featured-description h2 {
     color: var(--navy-blue);
     margin-bottom: 14px;
@@ -257,6 +258,47 @@ header {
 .featured-description p {
     margin-bottom: 14px;
 }
+
+/* ------------------
+    footer 
+-------------------*/
+.footer-container {
+    background-color: var(--navy-blue);
+    color: var(--white);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.footer-info p {
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--footer-text);
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social-icons .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: #9e9ad63f;
+    border-radius: 50%;
+}
+
 
 /* ------------------
     media query 
