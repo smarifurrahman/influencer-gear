@@ -16,7 +16,7 @@ common styles
     --rating: #5E6366;
     --card-description: #787885;
     --navy-blue: #0A0826;
-    --featured-description:#6C6C6C;
+    --section-sub-title:#6C6C6C;
     --footer-text: #D9DBE1;
 
     --primary-font: 'Poppins', sans-serif;
@@ -47,11 +47,23 @@ section {
     text-align: center;
 }
 
+.section-sub-title {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--section-sub-title);
+}
+
 .button-common {
     border: 0;
     padding: 10px 24px;
     font-size: 16px;
     font-weight: 700;
+    background: var(--theme);
+    color: var(--white);
+}
+
+.fa-arrow-right {
+    margin-left: 7px;
 }
 
 /* ------------
@@ -117,19 +129,13 @@ header {
     font-size: 52px;
 }
 
-.header-container p {
+.header-items p {
     font-weight: 600;
     font-size: 16px;
 }
 
 .header-container button {
     border-radius: 41px;
-    background: var(--theme);
-    color: var(--white);
-}
-
-.header-container button i {
-    margin-left: 8px;
 }
 
 .header-image {
@@ -224,6 +230,32 @@ header {
     display: flex;
     justify-content: right;
     padding: 40px 30px 0;
+}
+
+/* ------------------
+    featured products
+-------------------*/
+.featured-info {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 80px;
+    align-items: center;
+}
+
+.featured-info img {
+    width: 100%;
+}
+
+.featured-description {
+    padding-bottom: 20px;
+}
+.featured-description h2 {
+    color: var(--navy-blue);
+    margin-bottom: 14px;
+}
+
+.featured-description p {
+    margin-bottom: 14px;
 }
 
 /* ------------------
