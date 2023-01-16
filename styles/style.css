@@ -7,9 +7,11 @@ common styles
 
 :root {
     --primary: #3A3A3A;
+    --primary-hover :#686868;
     --white:#FFFFFF;
     --black: #000000;
     --theme: #E02C6D;
+    --theme-hover: #f71266;
     --card-title: #18191F;
     --price: rgba(0, 0, 0, 0.87);
     --star: #FB8200;
@@ -62,6 +64,11 @@ section {
     font-weight: 700;
     background: var(--theme);
     color: var(--white);
+    cursor: pointer;
+}
+
+.button-common:hover {
+    background-color: var(--theme-hover);
 }
 
 .fa-arrow-right {
@@ -100,6 +107,11 @@ header {
 
 .nav-item li {
     list-style: none;
+    cursor: pointer;
+}
+
+.nav-item li:hover {
+    color: var(--primary-hover);
 }
 
 .nav-item button {
@@ -108,6 +120,11 @@ header {
     background: none;
     display: block;
     font-size: 18px;
+    cursor: pointer;
+}
+
+.nav-item button:hover {
+    color: var(--primary-hover);
 }
 
 /* header-banner */
@@ -200,6 +217,11 @@ header {
     border-radius: 5px;
     background-color: #FFFFFF;
     max-width: 329px;
+    transition: transform 0.5s ease-out;
+}
+
+.collection:hover {
+    transform: scale(1.03);
 }
 
 .collection img {
@@ -249,6 +271,11 @@ header {
     padding: 0;
     background: none;
     color: var(--theme);
+}
+
+.popular-collection button:hover {
+    color: var(--theme-hover);
+    background: none;
 }
 
 .see-more-container {
@@ -329,6 +356,12 @@ header {
     width: 32px;
     background-color: #9e9ad63f;
     border-radius: 50%;
+    transition: transform 0.5s ease-out;
+    cursor: pointer;
+}
+
+.social-icons .icon:hover {
+    transform: scale(1.15);
 }
 
 
