@@ -149,7 +149,13 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     max-width: 440px;
-    width: 80%;
+    width: 100%;
+}
+
+.header-image img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
 }
 
 /* partner */
@@ -166,6 +172,8 @@ header {
 }
 
 .partners img {
+    object-fit: contain;
+    object-position: center;
     max-width: 111px;
     width: 100%;
 }
@@ -345,7 +353,8 @@ header {
     
     .nav-item {
         justify-content: center;
-        gap: 10px;
+        gap: 15px;
+        padding-left: 0;
     }
     
     .header-container, .collections, .featured-info {
@@ -395,6 +404,7 @@ header {
     .nav-item {
         justify-content: center;
         gap: 40px;
+        padding-left: 0;
     }
     
     .header-container, .featured-info {
